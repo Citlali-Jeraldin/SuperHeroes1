@@ -1,0 +1,13 @@
+
+<h1>LISTADO DE SUPER HEROES CAÑONES</h1>
+<ul>
+<li *ngFor="let heroe of heroes; let indice = index">
+
+  {{ indice + 1 }} - {{ heroe }} <button (click)="removeItem(indice)"> <br>BORRAR</button>
+</li>
+<div>
+</div>
+<h2>ELEMENTOS ELIMINADOS</h2>
+<h1>HAS ELIMINADO A: <li *ngFor="let heroe of eliminar; let i = index">
+{{ i + 1 }} - {{ heroe }}
+</li>
