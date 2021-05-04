@@ -1,0 +1,38 @@
+
+<h1>LISTADO DE  VILLANOS </h1>
+
+<ul class="villanos">
+    <li *ngFor="let villano of villanos"
+      [class.selected]="villano === selectedVillano"
+        (click)="onSelect(villano)">
+        <span class="badge">{{villano.name}}</span>{{villano.poder}}
+      </li>
+  </ul>
+  <div *ngIf="selectedVillano">
+    <h2>{{selectedVillano.name | uppercase}} detalles</h2>
+    <div><span>name: </span>{{selectedVillano.poder}}</div>
+
+  <div>
+    <label for = "villano-name">Villano Nombre: </label>
+      <im        put name="villano-name" [(ngModel)]="selectedVillano.name" placeholder="nombre">
+    
+
+    <div>
+        <label for = "villano-poder">Villano Poder: </label>
+          <imput poder="villano-poder" [(ngModel)]="selectedVillano.poder" placeholder="poder">
+       
+
+
+        <ul>
+          <li *ngFor="let villanos of villanos; let indice = index">
+            
+              {{ indice + 1 }} - {{ villanos }}
+            
+            </li>
+            <div>
+                <h1>{{title}}</h1>
+                <h3>EL VILLANO ES :{{base}}</h3>
+                <button (click) ="acumular(base)">+{{base}}</button>
+                <span>{{numero}}</span>
+                <button (click) = "acumular(base)">-{{base}}</button>
+            </div>

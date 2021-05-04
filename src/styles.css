@@ -20,7 +20,7 @@
     background-color: black;
     border-radius: 5px;
     border: 0px;
-    color: white;
+    color: rgb(207, 59, 163);
     cursor: pointer;
     margin-right: 5px;
     margin-left: 5px;
@@ -28,7 +28,7 @@
     }
     
     button:hover {
-    background-color: #3e4144;
+    background-color: #e751c2;
     }
     
     button:focus{

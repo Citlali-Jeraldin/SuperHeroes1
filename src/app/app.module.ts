@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListadoComponent } from './heroes/listado/listado.component';
 
+import { VillanosComponent } from './heroes/villanos/villanos.component';
+
 
 
 @NgModule({
@@ -13,6 +15,7 @@ import { ListadoComponent } from './heroes/listado/listado.component';
     AppComponent,
     HeroeComponent,
     ListadoComponent,
+    VillanosComponent
     
   ],
   imports: [
